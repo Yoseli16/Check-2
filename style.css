@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 34vh;
+   
+}
+h1{
+    color: white;
+}
+.nav-color{
+    background-color: CadetBlue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+}
+nav a{
+    color: CadetBlue;
+    background-color:white ;
+    text-decoration: none;
+    border-radius: 17px;  
+    padding: 4px; 
+}
+nav a:hover{
+    background-color:LightCyan ;
+}
+main{
+    display: flex;
+    justify-content: center;
+    background-color:LightCyan ;
+}
+h2{
+    background-color: CadetBlue; 
+    color: white;
+    text-align: center;
+}
+.contenedor{
+    margin: 10px;
+    width: 25vw;
+    
+}
+
+.sec-img{
+    text-align: center;
+    margin-top: 3rem;
+    width: 90%;
+    background-color: CadetBlue ;
+    border-radius: 15px;
+    color: white;
+    padding: 2rem;
+}
+
+.sec-img img{
+    width: 90%;
+    border-radius: 15px;
+}
+.lista-tabla{
+    background-color: CadetBlue;
+    margin-top: 2rem;
+    height: 60%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+}
+ul{
+    color: white;
+}
+li{
+    margin-top: 2rem;
+}
+table{
+    height: 60%;
+    width: 90%;
+}
+table, th, tr, td{
+    color: white;
+    text-align: center;
+    border:  1px solid rgb(255, 255, 255);
+}
+footer{
+    margin-top: 2rem;
+    background-color: CadetBlue;
+   height: 9vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+fieldset{
+   padding: 5px;
+   color: white;
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+@media(min-width: 768px) and (max-width:1023px){
+    main{
+        justify-content: space-around;
+    }
+    .contenedor{
+        width: 80%;
+    }
+    .sec-img{
+        width: 55vw;
+    }
+    h2{
+        font-size: medium;
+    }
+}
+@media(min-width: 320px) and (max-width:767px){
+    h1{
+        font-size: x-large;
+    }
+    nav a{
+        font-size: medium;
+    }
+    nav{
+        display: flex;
+
+    }
+    .nav-color{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor{
+        width: 100%;
+    }
+    li{
+        margin: 5px;
+    }
+    .sec-img{
+        margin: 10px;
+        margin-left: 20px;
+    }
+    footer{
+        flex-direction: column;
+        height: 20vh;
+    }
+    footer a{
+        font-size: larger;
+    }
+}
+
